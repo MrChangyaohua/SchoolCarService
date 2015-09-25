@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.serverlocation"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+    
+	<uses-permission android:name="android.permission.READ_LOGS"/>
+	
+	<uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" /> 
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:allowBackup="true"
+        android:persistent="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="eb9b6713cc4d987cf75f9cac584ab1ac" />
+        
+        <activity
+            android:name="com.example.serverlocation.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <service 
+            android:name="com.example.serverlocation.FirstService"
+            android:enabled="true">
+       </service>
+       
+       <receiver 
+            android:name="Receiver1"
+            android:enabled="true">           
+        </receiver>
+         
+        <receiver 
+            android:name="Receiver2"
+            android:enabled="true">           
+        </receiver>
+        
+        <receiver 
+            android:name="Receiver3"
+            android:enabled="true">           
+        </receiver>
+        
+        <receiver 
+            android:name="Receiver4"
+            android:enabled="true">           
+        </receiver>
+        
+        <receiver 
+            android:name="Receiver5"
+            android:enabled="true">           
+        </receiver>
+        <receiver 
+            android:name="Receiver6"
+            android:enabled="true">           
+        </receiver>
+        
+        <receiver 
+            android:name="Receiver7"
+            android:enabled="true">           
+        </receiver>
+        
+    </application>
+
+</manifest>
